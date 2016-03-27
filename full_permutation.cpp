@@ -37,7 +37,7 @@ void Print(T *num, unsigned n)
 {
   for(unsigned i=0;i<n;i++)
   {
-      std::cout<<num[i]<<" ";
+      std::cout<<num[i];
   }
     std::cout<<std::endl;
 }
@@ -76,12 +76,23 @@ void Prem( T *num, unsigned n )   //full_permutation function
     }
 }
 
-/*int main(int argc,char *argv[])
+int main(int argc,char *argv[])
 {
     int a[5]={9,8,7,6,5};
 
 
     Prem( a, 5 );
 
+     int n=5,p[5]={ 3, 0, 1, 2, 4 };
+
+    //it do some thing like the code blow
+    /*std::stable_sort(p,p+n);
+    do{
+        for(int i=0;i<n;i++)
+            std::cout<<p[i];
+
+          std::cout<<std::endl;
+    }while(std::next_permutation(p,p+n));*/
+
 	return 0;
-}*/
+}
